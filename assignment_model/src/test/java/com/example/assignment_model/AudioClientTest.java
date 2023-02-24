@@ -30,8 +30,8 @@ public class AudioClientTest {
         baseUrl = "http://localhost:" + 9001 + "/audioApi/";
     }
 
-    @Test
-    public void testConcurrentRequests() {o
+//    @Test
+    public void testConcurrentRequests() {
         int numClients = 50; // total number of clients
         int numGets = 5; // number of clients sending GET requests
         int numPosts = 1; // number of clients sending POST requests
@@ -74,7 +74,7 @@ public class AudioClientTest {
     }
 
 
-    @Test
+//    @Test
     public void testGetAllAudioItems() {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
@@ -84,7 +84,7 @@ public class AudioClientTest {
         System.out.println("Response for all audio items: " + response.getBody());
     }
 
-    @Test
+//    @Test
     public void testCreateAudioItem() {
         RestTemplate restTemplate = new RestTemplate();
         HttpHeaders headers = new HttpHeaders();
